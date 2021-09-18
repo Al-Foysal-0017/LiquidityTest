@@ -1,0 +1,123 @@
+.Sidebar {
+  position: static;
+  width: auto;
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.33) inset;
+  -webkit-box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.33) inset;
+  -moz-box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.33) inset;
+  background: #1f4037;
+  background: -webkit-linear-gradient(to right, #40b67f, #1f4037);
+  background: linear-gradient(to right, #40b67f, #1f4037);
+  color: #fff;
+}
+
+.SidebarLinks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.SidebarRoute {
+  text-decoration: none;
+  color: #fff;
+}
+.SidebarRouteTwo {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 0;
+  font-size: 14px;
+}
+.activeNavLink {
+  color: yellowgreen;
+}
+.userAccountSidebar {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  background: #1e3e35;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.33) inset;
+  -webkit-box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.33) inset;
+  -moz-box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.33) inset;
+}
+.userAccountBalance {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  background: #1e3e35;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.33) inset;
+  -webkit-box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.33) inset;
+  -moz-box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.33) inset;
+}
+
+.ulListForRoutes {
+  list-style: none;
+}
+
+.Dropdown {
+  margin-top: 8px;
+  overflow: hidden;
+}
+.ListBarOpen {
+  max-height: 24rem;
+}
+.ListBarClosed {
+  max-height: 0px;
+}
+
+.transform {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.translateForSidebar {
+  --tw-translate-x: 0px;
+}
+
+.translateForSidebarNeg {
+  --tw-translate-x: -100%;
+}
+
+@media (min-width: 1024px) {
+  .translateForSidebarNeg {
+    --tw-translate-x: 0px;
+  }
+  .userAccountSidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .Sidebar {
+    width: 240px;
+    z-index: 999;
+    position: fixed;
+  }
+}
